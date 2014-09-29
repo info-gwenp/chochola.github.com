@@ -1,0 +1,11 @@
+@font-face {
+	font-family: 'MarketDeco';
+	src: url('./MarketDeco.eot');
+	src: local('MarketDeco'), url('./MarketDeco.woff') format('woff'), url('./MarketDeco.ttf') format('truetype');
+}
+/* use this class to attach this font to any element i.e. <p class="fontsforweb_fontid_4387">Text with this font applied</p> */
+.fontsforweb_fontid_4387 {
+	font-family: 'MarketDeco' !important;
+}
+
+/* Font downloaded from FontsForWeb.com */

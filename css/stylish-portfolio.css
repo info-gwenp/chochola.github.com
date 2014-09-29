@@ -1,0 +1,314 @@
+/*!
+ * Start Bootstrap - Stylish Portfolio Bootstrap Theme (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+/* Global Styles */
+/* http://www.colourlovers.com/palette/2402870/BaileysChocolate */
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+@font-face {
+    font-family: 'MarketDeco';
+    src: url('../fonts/MarketDeco.eot');
+    src: local('MarketDeco'), url('../fonts/MarketDeco.woff') format('woff'), url('../fonts/MarketDeco.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'journalregular';
+    src: url('../fonts/journal-webfont.eot');
+    src: url('../fonts/journal-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/journal-webfont.woff') format('woff'),
+         url('../fonts/journal-webfont.ttf') format('truetype'),
+         url('../fonts/journal-webfont.svg#journalregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.text-vertical-center {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+h1 {
+    font-family: 'MarketDeco';
+}
+
+h2 {
+    font-family: 'journalregular';
+    font-size: 50px;
+}
+
+.text-vertical-center h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 4.5em;
+    font-weight: 700;
+}
+
+/* Custom Button Styles */
+
+.btn-dark {
+    border-radius: 0;
+    color: #fff;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.btn-dark:hover,
+.btn-dark:focus,
+.btn-dark:active {
+    color: #fff;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.btn-light {
+    border-radius: 0;
+    color: #333;
+    background-color: rgb(255,255,255);
+}
+
+.btn-light:hover,
+.btn-light:focus,
+.btn-light:active {
+    color: #333;
+    background-color: rgba(255,255,255,0.8);
+}
+
+/* Custom Horizontal Rule */
+
+hr.small {
+    max-width: 100px;
+}
+
+/* Side Menu */
+
+
+.sidebar-nav { 
+    position: fixed;
+    top: 25%;
+    right: 0;
+    list-style: none;
+}
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+}
+
+.sidebar-nav li a {
+    display: block;
+    font-family: 'MarketDeco' !important;
+    text-decoration: none;
+    color: #F2D6AA;
+    font-size: 18pt;
+}
+
+.sidebar-nav li a {
+    margin-top: 4px;
+    margin-bottom: 4px;
+    text-decoration: none;
+    color: #3A1908;
+    background: #F7E577;
+}
+
+.sidebar-nav li a:hover {
+    color: #31A80F;
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+    height: 55px;
+    font-size: 18px;
+    line-height: 55px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+    color: #999;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color: #fff;
+    background: none;
+}
+
+#menu-toggle {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+.menu {
+    width: 100%;
+    height: 100px;
+    background: -moz-linear-gradient(top, rgba(97,42,17,1) 0%, rgba(71,29,17,0) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(97,42,17,1)), color-stop(100%,rgba(71,29,17,0))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(97,42,17,1) 0%,rgba(71,29,17,0) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(97,42,17,1) 0%,rgba(71,29,17,0) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(97,42,17,1) 0%,rgba(71,29,17,0) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(97,42,17,1) 0%,rgba(71,29,17,0) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#612a11', endColorstr='#00471d11',GradientType=0 ); /* IE6-9 */
+}
+
+#sidebar-wrapper.active {
+    right: 250px;
+    width: 250px;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+.toggle {
+    margin: 5px 5px 0 0;
+}
+
+/* Header */
+
+.header {
+    display: block;
+    position: relative;
+    color: white;
+    width: 100%;
+    height: 100%;
+    background: url(../img/ivan_chocolat.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.header p {
+    font-family: 'journalregular';
+}
+
+.header .fa-circle {
+    color: #F7E577;
+}
+.header .fa-angle-down  {
+    color: #31A80F;
+}
+
+.btn-header {
+    position: absolute;
+    top: 66%;
+    left: 50%;
+}
+
+.btn-header span {
+    position: relative; 
+    left: -50%;
+    top: -50%;
+}
+
+/* About */
+
+.about {
+    padding: 50px 0;
+    background: #F2D6AA;
+    height: 30%;
+    width: 100%;
+}
+
+/* Services */
+
+.services {
+    padding: 50px 0;
+}
+
+.service-item {
+    margin-bottom: 30px;
+}
+
+/* Callout */
+
+.callout {
+    display: table;
+    width: 100%;
+    height: 400px;
+    color: #fff;
+    background: url(../img/header_bg.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+/* Portfolio */
+
+.portfolio {
+    padding: 50px 0;
+}
+
+.portfolio-item {
+    margin-bottom: 30px;
+}
+
+.img-portfolio {
+    margin: 0 auto;
+}
+
+.img-portfolio:hover {
+    opacity: 0.8;
+}
+
+/* Call to Action */
+
+.call-to-action {
+    padding: 50px 0;
+}
+
+.call-to-action .btn {
+    margin: 10px;
+}
+
+/* Map */
+
+.map {
+    height: 500px;
+}
+
+@media(max-width:768px) {
+    .map {
+        height: 75%;
+    }
+}
+
+/* Footer */
+
+footer {
+    padding: 100px 0;
+}
+
+
+/* bootstrap overrides */
+.bg-primary {
+    color: #F5E3CB;
+    background-color: #471D11;
+}
+
+.text-primary {
+    color: #471D11;
+}
+
+a {
+    color: #612A11;
+}
+a:hover {
+    color: #471D11;
+}
+
